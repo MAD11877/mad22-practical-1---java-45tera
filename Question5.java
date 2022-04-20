@@ -27,7 +27,7 @@ public class Question5
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
      
-     //Create a Scanner
+    //Create a Scanner
      Scanner in = new Scanner(System.in);
     
      //Prompt the user for input 
@@ -38,9 +38,9 @@ public class Question5
     
      //Create an Array List
      ArrayList<Integer> numberlist = new ArrayList<>();
-
+    
      //for loop to loop through the numbers
-     for(int x=0; x<number; x++ ){
+     for(int x=0; x<number; x++){
         //Prompt the user for input 
         System.out.println("Enter a number:");
       
@@ -49,17 +49,33 @@ public class Question5
 
         //Add number into array
         numberlist.add(number2);
-     }
+      }
     
+     //To ensure the scope of the variables
+     int mode =0;
+     int freq = 0;
+     int count = 0;
+     int range = number; //do not want to change the number input in
+
     
-   
      //Access and find the mode
+      for (int x=0; x< numberlist.size();x++){
+        count=0; //reset
+        for(int y=1; y< range; y++){
+          if(numberlist.get(x) == numberlist.get(y)){
+            count++;
+          }
+        }
 
-
-     //Print the mode
-     System.out.println("The mode is: " + mode);
-
-
+        //if the count of the number being selected by the list has a higher freq than the mode's freq, replace the mode number.
+        if (count >freq){
+          freq=count;
+          mode=numberlist.get(x);
+        }
+        range--;
+      } 
     
+      //Print
+      System.out.println("The mode is " +mode);
   }
 }
