@@ -13,13 +13,13 @@ public class Question2
     Scanner in = new Scanner(System.in);
     
     //Prompt user for Height 
-    System.out.println("Enter your Height (in m): ");
+    //System.out.println("Enter your Height (in m): ");
     
     //Height input
     double height = in.nextDouble();
     
     //Prompt user for Weight
-    System.out.println("Enter your Weight (in kg): ");
+    //System.out.println("Enter your Weight (in kg): ");
     
     //Weight input 
     double weight = in.nextDouble();
