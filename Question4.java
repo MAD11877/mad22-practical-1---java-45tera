@@ -30,7 +30,7 @@ public class Question4
     for (int x = rows -1;x >=0; x--){
       String line = "*";
       for (int y=0;y<x;y++){
-        line += " *";
+        line += "*";
       } 
       System.out.println(line);
     }
