@@ -21,7 +21,7 @@ public class Question4
     Scanner in = new Scanner(System.in);
     
     //Prompt user for integer
-    System.out.println("Enter a number:");
+    //System.out.println("Enter a number:");
     
     //Read and Save the variable
     int rows = in.nextInt();
