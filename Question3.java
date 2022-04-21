@@ -13,7 +13,7 @@ public class Question3
     Scanner in = new Scanner(System.in);
     
     //Prompt user for integer
-    System.out.println("Enter a number: ");
+    //System.out.println("Enter a number: ");
     
     //Read,Store the input of the user
     int number = in.nextInt();
@@ -22,7 +22,8 @@ public class Question3
     number = number * number ;
       
     //Print the number 
-    System.out.println("The squared product of the number entered is " + number);
+    //System.out.println("The squared product of the number entered is " + number);
+    System.out.println(number);
     
   }
 }
