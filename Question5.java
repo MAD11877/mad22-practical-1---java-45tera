@@ -31,7 +31,7 @@ public class Question5
      Scanner in = new Scanner(System.in);
     
      //Prompt the user for input 
-     System.out.println("Enter a number:");
+     //System.out.println("Enter a number:");
 
      //Read,Save the input
      int number = in.nextInt();
@@ -42,7 +42,7 @@ public class Question5
      //for loop to loop through the numbers
      for(int x=0; x<number; x++){
         //Prompt the user for input 
-        System.out.println("Enter a number:");
+        //System.out.println("Enter a number:");
       
         //Read,Save the input
         int number2 = in.nextInt();
@@ -76,6 +76,7 @@ public class Question5
       } 
     
       //Print
-      System.out.println("The mode is " +mode);
+      //System.out.println("The mode is " +mode);
+      System.out.println(mode);
   }
 }
